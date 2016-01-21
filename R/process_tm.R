@@ -39,7 +39,7 @@ process_tm <- function(x, asp_ratio, shp_info) {
 		if (length(aes.color)==1 && is.null(names(aes.color))) names(aes.color) <- "base"
 		
 		if (!is.null(names(aes.color))) {
-			aes.colors <- c(fill="grey85", borders="grey40", bubbles="blueviolet", dots="black", lines="red", text="black", na="grey60")
+			aes.colors <- c(fill="grey85", borders="grey40", bubbles="blueviolet", dots="black", lines="red", text="black", na="red")
 			aes.colors[names(aes.color)] <- aes.color
 		} else {
 			aes.colors <- rep(aes.color, length.out=7)
